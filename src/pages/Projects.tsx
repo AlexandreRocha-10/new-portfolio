@@ -11,7 +11,7 @@ const Projects: FC = () => {
   return (
     <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
         <h1 className="text-4xl font-bold text-center text-[#001b5e]">Projects</h1>
-        <p className="text-center py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos nobis nesciunt, temporibus voluptatibus ut quisquam officiis excepturi ad quas. Impedit ipsam earum possimus at voluptate, quidem saepe nemo voluptates</p>
+        <p className="text-center py-8">Here are some of the projects I've developed. Feel free to explore more on my GitHub profile. Any questions, suggestions, or critiques are welcome!</p>
         <div className="grid sm:grid-cols-2 gap-12">
             <ProjectItem img={shoppingcart} title='Shopping Cart' tech='React.JS' githubLink='#' appLink='#' />
             <ProjectItem img={solarsystem} title='Solar System' tech='React.JS' githubLink='#' appLink='#' />

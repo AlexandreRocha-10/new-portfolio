@@ -30,9 +30,9 @@ export default function Home() {
                 />
                 </h2>
                 <div className='flex justify-between pt-6 max-w-[150px] w-full'>
-                    <FaGithub className='cursor-pointer' size={20}/>
-                    <FaLinkedinIn className='cursor-pointer' size={20}/>
-                    <FaInstagram className='cursor-pointer' size={20}/>
+                    <a href="https://github.com/AlexandreRocha-10"><FaGithub className='cursor-pointer' size={20}/></a>
+                    <a href="https://www.linkedin.com/in/alexandrerocha10/"><FaLinkedinIn className='cursor-pointer' size={20}/></a>
+                    <a href="https://www.instagram.com/oalexandre_rocha/"><FaInstagram className='cursor-pointer' size={20}/></a>
                 </div>
             </div>
 
