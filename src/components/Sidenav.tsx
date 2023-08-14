@@ -14,7 +14,9 @@ const iconMapping: { [key: string]: React.ComponentType<{ size: number }> } = {
 
 export default function Sidenav() {
   const [nav, setNav] = useState(false);
+
   const handleNav = () => setNav(!nav);
+  const handleMenuItemClick = () => handleNav();
 
   return (
     <div>
@@ -23,7 +25,12 @@ export default function Sidenav() {
             nav ? (
                 <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
                     {Object.keys(iconMapping).map((itemName) => (
-                        <MenuItem key={itemName} name={itemName} Icon={iconMapping[itemName]} />
+                        <MenuItem 
+                        key={itemName}
+                        name={itemName}
+                        Icon={iconMapping[itemName]}
+                        onClick={handleMenuItemClick}
+                        />
                     ))}
                 </div>
             ) : (
@@ -33,7 +40,11 @@ export default function Sidenav() {
         <div className="md:block hidden fixed top-[25%] z-10">
             <div className="flex flex-col">
                 {Object.keys(iconMapping).map((itemName) => (
-                    <SideMenuItem key={itemName} Icon={iconMapping[itemName]} itemName={itemName.toLowerCase()} />
+                    <SideMenuItem
+                    key={itemName}
+                    Icon={iconMapping[itemName]}
+                    itemName={itemName.toLowerCase()}
+                    />
                 ))}
             </div>
         </div>
