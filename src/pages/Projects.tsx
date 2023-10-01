@@ -4,7 +4,7 @@ import ProjectItem from "../components/ProjectItem";
 import iarabicalho from "../assets/iarabicalho.jpeg"
 import trybewallet from "../assets/trybewallet.jpeg";
 import trybetunes from "../assets/trybetunes.jpeg";
-import tryunfo from "../assets/tryunfo.jpeg";
+import uaisearch from "../assets/uaisearch.jpeg";
 
 
 const Projects: FC = () => {
@@ -16,7 +16,7 @@ const Projects: FC = () => {
             <ProjectItem img={iarabicalho} title='Iara Bicalho Website' tech='Typescript + React + Vite + Tailwind' githubLink='https://github.com/AlexandreRocha-10/iarabicalho-site' appLink='https://iarabicalho.vercel.app/' />
             <ProjectItem img={trybewallet} title='Trybe Wallet' tech='Typescript + React + Vite + Tailwind + Tremor' githubLink='https://github.com/AlexandreRocha-10/dashboard' appLink='https://trybe-wallet-rose-mu.vercel.app/' />
             <ProjectItem img={trybetunes} title='Trybetunes' tech='React.JS' githubLink='#' appLink='#' />
-            <ProjectItem img={tryunfo} title='Tryunfo' tech='React.JS' githubLink='#' appLink='#' />
+            <ProjectItem img={uaisearch} title='UaiSearch' tech='Next.js + Tailwind + Google APIs  ' githubLink='https://github.com/AlexandreRocha-10/discover' appLink='https://uaisearch.vercel.app/' />
         </div>        
     </div>
   )
